@@ -47,14 +47,14 @@ const extraMetadata = {
 // NFTPort Info
 
 // ** REQUIRED **
-const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
+const AUTH = process.env.36e234b3-b2db-46a4-ba88-c2051833fcc5; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
-const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
+const CONTRACT_NAME = 'DriftQueens';
+const CONTRACT_SYMBOL = 'DQ';
+const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
 const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
