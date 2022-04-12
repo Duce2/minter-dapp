@@ -18,11 +18,14 @@ const layerConfigurations = [
     layersOrder: [
       { name: "Background" },
       { name: "Car Colors" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Body" },
+      { name: "Tattoo" },
+      { name: "Outfits" },
+      { name: "Hair" },
+      { name: "Eyes" },
+      { name: "sunglasses" },
+      { name: "Lolipop" },
+      { name: "accessories" },
     ],
   },
 ];
@@ -67,7 +70,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x15EfaA0252594c1A54733870E4e984A7a02B9323"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "0x37976A88dcdf40b8EdA9ae628a09d90E9CC168B8"; // If you want to manually include it
