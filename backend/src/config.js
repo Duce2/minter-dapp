@@ -47,18 +47,18 @@ const extraMetadata = {
 // NFTPort Info
 
 // ** REQUIRED **
-const AUTH = process.env.36e234b3-b2db-46a4-ba88-c2051833fcc5; // Set this in the .env file to prevent exposing your API key when pushing to Github
+const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'DriftQueens';
 const CONTRACT_SYMBOL = 'DQ';
-const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
+const OWNER_ADDRESS = '0x4235495C0ed2681c8e2F0EfBd90DFEBCFc3Dbb73';
+const TREASURY_ADDRESS = '0x4235495C0ed2681c8e2F0EfBd90DFEBCFc3Dbb73';
+const MAX_SUPPLY = 7500; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MINT_PRICE = 0.08; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
@@ -78,8 +78,8 @@ let CONTRACT_ADDRESS = "0x37976A88dcdf40b8EdA9ae628a09d90E9CC168B8"; // If you w
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "Which Queen will be yours?"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreib6dhvtr5feu2jbnh6fha7yu56ebvtrbe45kssjsuxs42lxmtxlkq"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
